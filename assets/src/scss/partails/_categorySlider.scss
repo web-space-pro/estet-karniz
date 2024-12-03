@@ -1,0 +1,33 @@
+.categorySwiper .swiper-slide {
+  //width: auto!important;
+}
+
+.category-button.active{
+  @apply text-white-900;
+}
+
+.data-text.active{
+  display: block;
+}
+.slider-button2{
+  border: 1px solid #0ecfd2;
+  border-radius: 20px;
+  width: 197px;
+  height: 197px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 200px;
+  z-index: 1;
+  cursor: pointer;
+}
+.slider-button.slider-prev{
+  // left: -11%;
+}
+.slider-button.slider-next{
+  //right: -11%;
+}
+.slider-button.disabled{
+  opacity: .3;
+}

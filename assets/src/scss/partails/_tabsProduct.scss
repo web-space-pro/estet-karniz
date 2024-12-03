@@ -1,0 +1,20 @@
+.tabsProduct {
+  position: relative;
+  .arrow {
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 25px solid white;
+  }
+
+  ul {
+    li {
+      &.active {
+        color: white;
+      }
+    }
+  }
+
+  .tab-content {
+    display: none;
+  }
+}

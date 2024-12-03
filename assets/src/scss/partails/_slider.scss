@@ -1,0 +1,65 @@
+.welcome{
+  .swiper-pagination{
+    @apply w-auto left-10 bottom-5 lg:bottom-11 text-left;
+  }
+  .swiper-pagination-bullet {
+    @apply w-8 lg:w-14 h-1 lg:h-1.5 bg-white-900 rounded-none opacity-100;
+    &-active{
+      @apply bg-blue-100;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    @apply w-10 h-10 sm:w-20 sm:h-20 xl:w-[7.75rem] xl:h-[7.75rem] rounded-full border bottom-6 top-auto;
+    svg{
+      @apply w-2 sm:w-4;
+    }
+    &:after{
+      content: none;
+    }
+    &:hover{
+      opacity: .7;
+    }
+  }
+  .swiper-button-next{
+    @apply right-3 sm:right-10 xl:right-0;
+
+  }
+  .swiper-button-prev{
+    @apply right-16 sm:right-32 xl:right-36 left-auto;
+  }
+
+   h4 {
+    opacity: 0;
+    filter: blur(4px);
+  }
+   h3, h2 {
+    opacity: 0;
+    filter: blur(4px);
+    transition: opacity 0.5s ease, filter 0.5s ease;
+  }
+
+  .swiper-slide-active h3 {
+    animation: fadeInLeft 1s ease forwards;
+    animation-delay: 0.3s;
+  }
+  .swiper-slide-active h2 {
+    animation: fadeInRight 1s ease forwards;
+    animation-delay: .6s;
+  }
+
+  .swiper-slide-active h4{
+    transition: opacity 0.5s ease, filter 0.5s ease;
+    animation: fadeInLeft 1s ease forwards;
+    animation-delay: .8s;
+  }
+  .swiper-slide-active a{
+    transition: opacity 0.5s ease;
+    animation: fadeInUp2 1s ease forwards;
+    animation-delay: 1s;
+  }
+
+}
+
+

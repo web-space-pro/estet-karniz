@@ -1,0 +1,7 @@
+footer{
+  .menu{
+    li{
+      @apply mx-2 hover:text-blue-100 inline-block;
+    }
+  }
+}

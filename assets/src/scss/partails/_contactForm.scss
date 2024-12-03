@@ -1,0 +1,233 @@
+form{
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="range"],
+  input[type="date"],
+  input[type="month"],
+  input[type="week"],
+  input[type="time"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="color"],
+  textarea,
+  {
+    @apply border rounded-3xl text-base  w-full text-white-900 inline-block font-light px-5 py-2 bg-transparent;
+  }
+  input::placeholder {
+    @apply text-white-900 font-light text-sm tracking-[0.15em];
+  }
+
+
+  input[type='checkbox'],
+  input[type='radio'] {
+
+    --active: #0ECFD2;
+    --active-inner: #fff;
+    --focus: 2px rgba(39, 94, 254, .3);
+    --border: #BBC1E1;
+    --border-hover: #0ECFD2;
+    --background: #fff;
+    --disabled: #F6F8FF;
+    --disabled-inner: #E1E6F9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 14px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    transition: background .3s, border-color .3s, box-shadow .2s;
+    &:after {
+      content: '';
+      display: block;
+      left: 0;
+      top: 0;
+      position: absolute;
+      transition: transform var(--d-t, .3s) var(--d-t-e, ease), opacity var(--d-o, .2s);
+    }
+    &:checked {
+      --b: #0ECFD2;
+      --bc: #0ECFD2;
+      --d-o: .3s;
+      --d-t: .6s;
+      --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+    }
+    &:disabled {
+      --b: var(--disabled);
+      cursor: not-allowed;
+      opacity: .9;
+      &:checked {
+        --b: var(--disabled-inner);
+        --bc: var(--border);
+      }
+      & + label {
+        cursor: not-allowed;
+      }
+    }
+    &:hover {
+      &:not(:checked) {
+        &:not(:disabled) {
+          --bc: #0ECFD2;
+        }
+      }
+    }
+    &:focus {
+      box-shadow: 0 0 0 var(--focus);
+    }
+    &:not(.switch) {
+      width: 14px;
+      &:after {
+        opacity: var(--o, 0);
+      }
+      &:checked {
+        --o: 1;
+      }
+    }
+    & + span {
+      font-size: 14px;
+      line-height: 21px;
+      cursor: pointer;
+      margin-left: 4px;
+    }
+  }
+
+  input[type='checkbox'] {
+    &:not(.switch) {
+      border-radius: 10px;
+      &:after {
+        width: 4px;
+        height: 6px;
+        border: 2px solid var(--active-inner);
+        border-top: 0;
+        border-left: 0;
+        left: 5px;
+        top: 3px;
+        transform: rotate(var(--r, 20deg));
+
+
+      }
+      &:checked {
+        --r: 43deg;
+      }
+    }
+    &.switch {
+      width: 38px;
+      border-radius: 11px;
+      &:after {
+        left: 2px;
+        top: 2px;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        background: var(--ab, var(--border));
+        transform: translateX(var(--x, 0));
+      }
+      &:checked {
+        --ab: var(--active-inner);
+        --x: 17px;
+      }
+      &:disabled {
+        &:not(:checked) {
+          &:after {
+            opacity: .6;
+          }
+        }
+      }
+    }
+  }
+
+
+  input[type='radio'] {
+    border-radius: 50%;
+    &:after {
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      background: var(--active-inner);
+      opacity: 0;
+      transform: scale(var(--s, .7));
+    }
+    &:checked {
+      --s: .5;
+    }
+  }
+
+
+
+  button,
+  input[type="button"],
+  input[type="submit"] {
+    @apply px-5 py-2.5 cursor-pointer w-full rounded-full bg-bg-gradient font-medium text-sm uppercase text-center text-white-900;
+  }
+
+  button:active,
+  button:focus,
+  button:hover,
+  input[type="button"]:hover,
+  input[type="button"]:active,
+  input[type="button"]:focus,
+  input[type="submit"]:active,
+  input[type="submit"]:hover,
+  input[type="submit"]:focus {
+    @apply shadow-lg;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  input[type="search"]:focus,
+  input[type="number"]:focus,
+  input[type="tel"]:focus,
+  input[type="range"]:focus,
+  input[type="date"]:focus,
+  input[type="month"]:focus,
+  input[type="week"]:focus,
+  input[type="time"]:focus,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="color"]:focus,
+  textarea:focus {
+    outline: none;
+    @apply shadow-lg;
+  }
+
+}
+.wpcf7-form{
+  .form-row{
+    @apply flex w-full flex-row space-x-5;
+    .form-control{
+      @apply mb-3;
+    }
+  }
+  .wpcf7-acceptance.optional{
+    @apply mb-3 inline-block;
+    label{
+      @apply flex items-center;
+    }
+  }
+
+  .wpcf7-spinner{
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  .wpcf7-not-valid-tip{
+    @apply text-xs pl-2.5;
+  }
+  .wpcf7-response-output{
+    @apply text-sm text-white-200/50;
+    border: none!important;
+    padding: 10px!important;
+    margin: 15px 0!important;
+  }
+}
