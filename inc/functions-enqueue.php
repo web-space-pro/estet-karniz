@@ -53,7 +53,7 @@ function scripts_add_defer_or_async($tag, $handle)
 	];
 	$handles_aysnc = [
 //		'jquery',
-		'lazysizes',
+		//'lazysizes',
 		'jquery-migrate',
 	];
 

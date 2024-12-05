@@ -89,11 +89,11 @@
                     </div>
                     <div class="mt-10">
                         <div class="flex flex-col items-center text-center leading-normal">
-                            <a class="hover:text-blue-100 hover:border-blue-100 highlight-white/20 focus:outline-none uppercase text-xl text-center inline-block py-1 px-3 font-semibold border rounded-[3rem] transition-colors duration-300 whitespace-nowrap"
+                            <a class="text-white-900 hover:text-blue-100 hover:border-blue-100 highlight-white/20 focus:outline-none uppercase text-xl text-center inline-block py-1 px-3 font-semibold border rounded-[3rem] transition-colors duration-300 whitespace-nowrap"
                                href="tel:<?= $phone; ?>" target="_blank">
                                 <?= $phone; ?>
                             </a>
-                            <span class="inline-block uppercase text-xs mt-1.5"><?= $small_title; ?></span>
+                            <span class="text-white-900 inline-block uppercase text-xs mt-1.5"><?= $small_title; ?></span>
                         </div>
                         <div class="flex flex-row w-full items-center justify-center mt-5">
                             <?php if(!empty($wts)) : ?>

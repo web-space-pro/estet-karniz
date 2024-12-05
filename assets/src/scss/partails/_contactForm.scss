@@ -209,7 +209,7 @@ form{
       @apply mb-3;
     }
   }
-  .wpcf7-acceptance.optional{
+  .wpcf7-acceptance{
     @apply mb-3 inline-block;
     label{
       @apply flex items-center;
@@ -225,7 +225,7 @@ form{
     @apply text-xs pl-2.5;
   }
   .wpcf7-response-output{
-    @apply text-sm text-white-200/50;
+    @apply text-sm text-white-900;
     border: none!important;
     padding: 10px!important;
     margin: 15px 0!important;
