@@ -12,7 +12,7 @@
                 <figure class="mb-2.5 w-20 sm:w-28 m-auto ">
                     <img src="<?= $i['icon'];?>" alt="<?php bloginfo('name'); ?>">
                 </figure>
-                <h3 class="uppercase font-base font-light"><?= $i['title'] ;?></h3>
+                <div class="uppercase font-base font-light"><?= $i['title'] ;?></div>
             </div>
         <?php endforeach; ?>
         </div>

@@ -13,9 +13,8 @@
                         <div class="after:content[''] after:z-[1] after:bg-black-900/70 after:absolute after:top-0 after:w-full after:h-full h-full">
                             <div class="relative z-10 flex items-center h-full">
                                 <div class="container uppercase">
-
+                                    <h3 class="text-2xl sm:text-5xl font-light"><?= $i['title_2'] ;?></h3>
                                     <h2 class="text-5xl sm:text-8xl font-black">
-                                        <div class="text-2xl sm:text-5xl font-light"><?= $i['title_2'] ;?></div>
                                         <?= $i['title'] ;?>
                                     </h2>
                                     <h4 class="text-2xl sm:text-3xl font-light"><?= $i['title3'] ;?></h4>

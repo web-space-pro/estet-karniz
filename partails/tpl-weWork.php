@@ -11,7 +11,7 @@
 <section id="about_us" class="pt-10 sm:pt-16">
     <?php if(!empty($title)) : ?>
         <div class="mb-16 lg:mb-24 bg-white-900 py-4 sm:py-6 px-5 sm:px-14 w-[90%] sm:w-[55%] text-black-800 uppercase font-black text-center md:text-right text-xl sm:text-3xl lg:text-4xl xl:text-5xl leading-tight rounded-br-[106px] rounded-tr-[106px]">
-            <h2><?= $title;?></h2>
+            <div><?= $title;?></div>
         </div>
     <?php endif; ?>
     <div class="container">
