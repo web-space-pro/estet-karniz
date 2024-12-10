@@ -30,6 +30,7 @@ function my_estet_send_to_amocrm($contact_form) {
 
 
       //  $url = "https://infoestetkarnizru.amocrm.ru/api/v4/leads/custom_fields";
+
         $url = "https://{$subdomain}.amocrm.ru/api/v4/leads";
 
         $response = wp_remote_post($url, [
