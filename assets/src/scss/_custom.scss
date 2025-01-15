@@ -154,3 +154,16 @@ main{
     }
   }
 }
+
+h2.wp-block-heading{
+  @apply mb-6 mt-8 text-2xl font-black md:text-3xl md:mb-8 md:mt-10;
+}
+h3.wp-block-heading{
+  @apply mb-5 text-xl font-black md:text-2xl md:mb-7;
+}
+h4.wp-block-heading{
+  @apply mb-4 text-base md:text-xl md:mb-5;
+}
+.entry-content > *{
+  @apply mb-4;
+}

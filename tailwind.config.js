@@ -11,6 +11,8 @@ module.exports = {
       'template-parts/content-produktsiya.php',
       'template-parts/content-search.php',
       'template-parts/content-none.php',
+      'template-parts/content-page.php',
+
       'search.php',
       'partails/tpl-contact.php',
       'partails/tpl-filterSlider.php',

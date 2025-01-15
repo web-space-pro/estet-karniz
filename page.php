@@ -32,17 +32,15 @@ get_header();
                                 }
                            }
                              else: ?>
-                         <section class="componentInfo">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="componentInfo__box">
-                                        <p>Вы не создали не одного блока! Перейдите в редактор страницы для добавление нового блока!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                                 <section class="mt-10">
+                                     <div class="bg-black-400 relative rounded-2xl mx-4 md:mx-10 py-8 xl:py-16">
+                                         <div class="container">
+                                             <?php
+                                             get_template_part( 'template-parts/content', get_post_type() );
+                                             ?>
+                                         </div>
+                                     </div>
+                                 </section>
                 <?php endif;
           endwhile; ?>
            </main>

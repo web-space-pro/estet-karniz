@@ -18,7 +18,7 @@ if ( function_exists('get_field') ) {
                             <?php endforeach; ?>
                         </ul>
                     </div>
-                    <div class="w-full sm:w-5/6 md:w-2/3 h-[500px]  relative py-5 sm:py-10 pl-5 sm:pl-10 md:pl-20 text-base text-justify border border-r-0 rounded-bl-[50px] rounded-tl-[50px] after:content[''] after:border after:border-l-0 sm:after:content after:z-[1]  after:absolute after:-top-[1px] after:-right-full after:w-full after:h-full" id="tab-container">
+                    <div class="w-full sm:w-5/6 md:w-2/3 h-[500px]  relative py-5 sm:py-10 pl-5 sm:pl-10 md:pl-20 text-base text-justify after:content['']  after:border after:rounded-[50px] after:border sm:after:content after:z-[1]  after:absolute after:top-0 after:left-0 after:bottom-0 after:-right-[100%] after:h-full" id="tab-container">
                         <div class="hidden md:block arrow absolute -left-[1.56rem] w-0 h-0 transition-all duration-500 ease-in-out "></div>
                         <?php foreach( $tab_list as $key => $item ): ?>
                             <div id="itemTabs<?= $key;?>" class="overflow-x-auto h-full tab-content *:mb-4">

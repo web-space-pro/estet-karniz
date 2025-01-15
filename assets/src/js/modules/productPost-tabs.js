@@ -2,10 +2,9 @@ $(document).ready(function () {
     function initArrowPosition(){
         let activeTab = $(".tabsProduct  ul  li.active");
         let arrowPosition = ''
-        if(activeTab.lenght > 0){
-            arrowPosition = (activeTab[0].offsetTop + activeTab[0].offsetHeight) / 2  + 12.5;
+        if(activeTab.length > 0){
+            arrowPosition = (activeTab[0].offsetTop + activeTab[0].offsetHeight) / 2  + 10.5;
         }
-
         $(".tabsProduct .tab-content:first").show();
         $(".tabsProduct .arrow").css("top", arrowPosition);
 
